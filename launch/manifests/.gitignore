@@ -1,0 +1,4 @@
+.tmp/
+modules/
+files/private_key
+hieradata/common.yaml

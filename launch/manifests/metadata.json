@@ -1,0 +1,9 @@
+{
+  "name": "spaceship-launcher",
+  "version": "0.0.1",
+  "author": "Sunny (darkowlzz) <me@darkowlzz.space>",
+  "dependencies": [
+    {"name": "puppetlabs/stdlib", "version_requirement": ">=4.15.0"},
+    {"name": "puppetlabs/vcsrepo", "version_requirement": ">=1.5.0"}
+  ]
+}

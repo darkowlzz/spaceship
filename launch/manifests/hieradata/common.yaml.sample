@@ -1,0 +1,14 @@
+---
+filedir: '/tmp/puppet/files/private_key'
+keypath: '/home/ubuntu/.ssh/id_rsa'
+system_user: 'ubuntu'
+ssh_config_path: '/home/ubuntu/.ssh/config'
+ssh_config_file: '/tmp/puppet/files/ssh_config'
+secrets_template: '/tmp/puppet/templates/secrets.erb'
+secrets_path: '/home/ubuntu/.secrets'
+
+repo: 'git@github.com:username/repo-name.git'
+repopath: '/home/ubuntu/repo-name'
+aws_access_key_id: ''
+aws_secret_access_key: ''
+aws_region: 'us-east-1'

@@ -1,0 +1,9 @@
+/* Optional */
+/*region = ""*/
+/*instance_type = ""*/
+/*enable_public_ip =*/
+
+image_id = ""
+key_pair = ""
+sg_id = "instanec-security-group-id"
+private_key_path = "/path/to/private-key"
