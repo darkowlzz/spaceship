@@ -25,6 +25,7 @@ file { '/usr/local/bin/terragrunt':
   mode => '0755'
 }
 
+# Terragrunt requires path of terraform in environment variable.
 file { '/etc/profile.d/terragrunt.sh':
   ensure  => file,
   content => "export TERRAGRUNT_TFPATH=/usr/local/bin/terraform",
