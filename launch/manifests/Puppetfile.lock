@@ -1,0 +1,10 @@
+FORGE
+  remote: https://forgeapi.puppetlabs.com
+  specs:
+    puppetlabs-stdlib (4.15.0)
+    puppetlabs-vcsrepo (1.5.0)
+
+DEPENDENCIES
+  puppetlabs-stdlib (>= 4.15.0)
+  puppetlabs-vcsrepo (>= 1.5.0)
+
