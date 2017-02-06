@@ -23,9 +23,15 @@
       "script": "basic_setup.sh"
     },
     {
+      "type": "file",
+      "source": "configdata",
+      "destination": "/tmp"
+    },
+    {
       "type": "puppet-masterless",
       "manifest_file": "manifests/site.pp",
-      "module_paths": ["modules"]
+      "module_paths": ["modules"],
+      "hiera_config_path": "hiera.yaml"
     }
   ]
 }

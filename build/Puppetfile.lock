@@ -1,11 +1,13 @@
 FORGE
   remote: https://forgeapi.puppetlabs.com
   specs:
+    maestrodev-wget (1.7.3)
     puppet-archive (1.2.0)
       puppetlabs-stdlib (< 5.0.0, >= 4.6.0)
     puppetlabs-stdlib (4.15.0)
 
 DEPENDENCIES
+  maestrodev-wget (>= 1.7.3)
   puppet-archive (>= 1.2.0)
   puppetlabs-stdlib (>= 4.15.0)
 
