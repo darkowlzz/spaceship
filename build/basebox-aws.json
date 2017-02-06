@@ -24,14 +24,14 @@
     },
     {
       "type": "file",
-      "source": "configdata",
+      "source": "manifests/hieradata",
       "destination": "/tmp"
     },
     {
       "type": "puppet-masterless",
       "manifest_file": "manifests/site.pp",
-      "module_paths": ["modules"],
-      "hiera_config_path": "hiera.yaml"
+      "module_paths": ["manifests/modules"],
+      "hiera_config_path": "manifests/hiera.yaml"
     }
   ]
 }
