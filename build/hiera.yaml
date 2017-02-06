@@ -1,0 +1,7 @@
+---
+:hierarchy:
+  - config
+:backends:
+  - yaml
+:yaml:
+  :datadir: '/tmp/configdata'
