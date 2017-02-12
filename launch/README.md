@@ -22,7 +22,12 @@ under `/tmp/puppet/`.
 [AWS provider](https://www.terraform.io/docs/providers/aws/) to use
 environment variables to pass in credentials.
 
-* __Install puppet modules__: Terraform uploads puppet modules from local to
+* __Add Instance Details__: Copy
+[terraform.tfvars.sample](terraform.tfvars.sample) to `terraform.tfvars` and
+add image ID, security group, ssh key pair name and path to ssh private key.
+This is required to ssh into the instance and run the provisioners.
+
+* __Install Puppet Modules__: Terraform uploads puppet modules from local to
 remote machine. This requires installation of puppet modules before running
 terraform. Spaceship uses [librarian-puppet](http://librarian-puppet.com/) to
 install puppet dependencies. Install librarian puppet and then run
