@@ -8,6 +8,8 @@ resource "aws_instance" "spaceship" {
   associate_public_ip_address = "${var.enable_public_ip}"
   key_name = "${var.key_pair}"
   vpc_security_group_ids = ["${var.sg_id}"]
+  iam_instance_profile = "${var.iam_instance_profile}"
+  tags = "${var.tags}"
 
   provisioner "remote-exec" {
     inline = [

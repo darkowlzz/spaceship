@@ -2,7 +2,9 @@
 /*region = ""*/
 /*instance_type = ""*/
 /*enable_public_ip =*/
+/*tags = {}*/
 
+iam_instance_profile = ""
 image_id = ""
 key_pair = ""
 sg_id = "instanec-security-group-id"
