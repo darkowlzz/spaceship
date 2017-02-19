@@ -6,6 +6,7 @@ variable "image_id" {}
 variable "instance_type" {
   default = "t2.large"
 }
+variable "subnet_id" {}
 variable "iam_instance_profile" {
   default = ""
 }
