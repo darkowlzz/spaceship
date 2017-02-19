@@ -19,7 +19,7 @@ terminates the server. Packer returns a machine image ID.
 * __Install [Packer](https://www.packer.io/downloads.html)__
 
 * __Specifying image details__: Copy
-[variables.json.sample](variables.json.sample) to `variables.json` and put
+[variables.json.sample](variables.json.sample) to `variables.json` and
 edit as per the requirements. Read [Packer Amazon AMI
 Builder](https://www.packer.io/docs/builders/amazon.html) to learn how to
 use environment variables and aws-cli tools.
@@ -37,8 +37,5 @@ install the puppet dependencies in `manifests/modules/` directory.
 
 
 ## Running
-
-If not using the default AWS profile, export `AWS_PROFILE` environment
-variable with proper profile name.
 
 Run packer with `packer build -var-file=variables.json basebox-aws.json`.
