@@ -18,11 +18,11 @@ terminates the server. Packer returns a machine image ID.
 
 * __Install [Packer](https://www.packer.io/downloads.html)__
 
-* __Specifying AWS Credentials__: Copy
+* __Specifying image details__: Copy
 [variables.json.sample](variables.json.sample) to `variables.json` and put
-in the AWS credentials. Read [Packer Amazon AMI
+edit as per the requirements. Read [Packer Amazon AMI
 Builder](https://www.packer.io/docs/builders/amazon.html) to learn how to
-use environment variables and aws-cli tools configuration to do the same.
+use environment variables and aws-cli tools.
 
 * Edit terraform and terragrunt download links in
 [manifests/hieradata/common.yaml](manifests/hieradata/common.yaml) to install
@@ -38,4 +38,7 @@ install the puppet dependencies in `manifests/modules/` directory.
 
 ## Running
 
-Run packer with `packer build basebox-aws.json`.
+If not using the default AWS profile, export `AWS_PROFILE` environment
+variable with proper profile name.
+
+Run packer with `packer build -var-file=variables.json basebox-aws.json`.
