@@ -1,4 +1,8 @@
 {
-  "aws_access_key": "foo",
-  "aws_secret_key": "bar"
+  "aws_region": "us-east-1",
+  "source_ami": "ami-e13739f6",
+  "instance_type": "t2.small",
+  "ssh_username": "ubuntu",
+  "vpc_id": "",
+  "subnet_id": ""
 }
