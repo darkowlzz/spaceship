@@ -1,6 +1,7 @@
 /* Optional */
 /*region = ""*/
 /*instance_type = ""*/
+/*subnet_id = ""*/
 /*enable_public_ip =*/
 /*tags = {}*/
 

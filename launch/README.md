@@ -41,10 +41,20 @@ be cloned and adding the private key in `manifests/files/private_key` file.
 Depending upon the use-case, the deployment key would have read & write
 permissions.
 
+* __Secrets__: Copy
+[secrets.erb.sample](manifests/templates/secrets.erb.sample) to `secrets.erb`
+and put the secrets that should be part of environment variables.
+
+
 __NOTE__: __[ssh_config](manifests/files/ssh_config)__ file is added as
 `.ssh/config` of the machine with `StrictHostKeyChecking` disabled for
 `github.com`. This is done to skip host key check while cloning a repo for
 for first time using ssh keys, else repo cloning fails.
+
+
+## IAM Policy Permissions
+
+Inshort, `AmazonEC2FullAccess` and `IAMFullAccess`.
 
 
 ## Running
