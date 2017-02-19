@@ -20,11 +20,6 @@ vcsrepo { hiera('repopath'):
   user     => hiera('system_user'),
 }
 
-# Variables to be used in secrets template
-$aws_access_key_id = hiera('aws_access_key_id')
-$aws_secret_access_key = hiera('aws_secret_access_key')
-$aws_region = hiera('aws_region')
-
 # Create secrets file
 file { hiera('secrets_path'):
   ensure  => file,

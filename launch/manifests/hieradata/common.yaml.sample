@@ -9,6 +9,4 @@ secrets_path: '/home/ubuntu/.secrets'
 
 repo: 'git@github.com:username/repo-name.git'
 repopath: '/home/ubuntu/repo-name'
-aws_access_key_id: ''
-aws_secret_access_key: ''
 aws_region: 'us-east-1'

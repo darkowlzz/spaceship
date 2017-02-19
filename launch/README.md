@@ -18,14 +18,11 @@ under `/tmp/puppet/`.
 
 * __Install [terraform](https://www.terraform.io/downloads.html)__
 
-* __Specifying AWS Credentials__: Read
-[AWS provider](https://www.terraform.io/docs/providers/aws/) to use
-environment variables to pass in credentials.
-
 * __Add Instance Details__: Copy
 [terraform.tfvars.sample](terraform.tfvars.sample) to `terraform.tfvars` and
-add image ID, security group, ssh key pair name and path to ssh private key.
-This is required to ssh into the instance and run the provisioners.
+add iam_instance_profile (with proper permissions), image ID, security group,
+ssh key pair name and path to ssh private key. This is required to ssh into
+the instance and run the provisioners.
 
 * __Install Puppet Modules__: Terraform uploads puppet modules from local to
 remote machine. This requires installation of puppet modules before running
